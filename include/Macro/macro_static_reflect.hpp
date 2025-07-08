@@ -8,6 +8,8 @@
 
 namespace SeReflection {
 
+
+//////////////////////////Simple/////////////////////////////////////////
 #define REFLECT(...) \
     static std::vector<std::pair<std::string, size_t>> getMemberInfo() { \
         return { __VA_ARGS__ }; \
@@ -29,16 +31,7 @@ public:
     )
 };
 
-
-
-// 侵入式反射示例
-#define REFLECTABLE \
-    friend class Reflection; \
-    static constexpr auto _fields = _
-
-
-
-
+////////////////////////////////////////////////////////////////////////////
 
 
 
